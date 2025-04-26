@@ -20,10 +20,10 @@ const Contact = () => {
         <div className="flex flex-col justify-center items-start gap-6">
           <p className="font-semibold text-lg text-gray-600">Our OFFICE</p>
           <p className="text-gray-500">
-            342602 Bilara <br /> Jodhpur, Rajasthan, India
+            📌 342602 Bilara <br /> Jodhpur, Rajasthan, India
           </p>
           <p className="text-gray-500">
-            Tel: (91) 7219995596 <br /> Email: nareshbarfa007@gmail.com
+            📞 Tel: +91-7297952644 <br /> ✉️ Email: paru2192000@gmail.com
           </p>
           <p className="font-semibold text-lg text-gray-600">
             Careers at Medico
