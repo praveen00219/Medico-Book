@@ -1,10 +1,26 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { AppContext } from "../context/AppContext";
-import { assets } from "../assets/assets_frontend/assets";
-import RelatedDoctor from "../components/RelatedDoctor";
 import { toast } from "react-toastify";
 import axios from "axios";
+import { assets } from "../assets/assets_frontend/assets";
+import { AppContext } from "../context/AppContext";
+import RelatedDoctor from "../components/RelatedDoctor";
+import VideoCall from "../components/VideoCall";
+
+// const rendomIDGenerate = (len) => {
+//   let result = "";
+//   const chars =
+//     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+//   let maxPos = chars.length;
+
+//   len = len || 7;
+
+//   for (let i = 0; i < len; i++) {
+//     result += chars.charAt(Math.floor(Math.random() * maxPos));
+//   }
+
+//   return result;
+// };
 
 const Appointment = () => {
   const { docId } = useParams();
@@ -131,7 +147,7 @@ const Appointment = () => {
   }, [docInfo]);
 
   useEffect(() => {
-    console.log(docSlots);
+    // console.log(docSlots);
   }, [docSlots]);
 
   return (
@@ -158,14 +174,16 @@ const Appointment = () => {
                   alt="verified_icon"
                 />
               </p>
-              <p className="flex flex-col items-center gap-1 cursor-pointer">
+              {/* Video Call */}
+              {/* <p className="flex flex-col items-center gap-1 cursor-pointer">
                 <img
                   className="w-10"
                   src={assets.video_call_icon}
                   alt="video_call_icon"
                 />
                 <span className="hidden md:block">Live Chat</span>
-              </p>
+              </p> */}
+              <VideoCall />
             </div>
 
             <div className="flex items-center gap-2 text-sm mt-1 text-gray-600">
