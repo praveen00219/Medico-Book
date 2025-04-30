@@ -175,15 +175,15 @@ const Appointment = () => {
                 />
               </p>
               {/* Video Call */}
-              {/* <p className="flex flex-col items-center gap-1 cursor-pointer">
+              <p className="flex flex-col items-center gap-1 cursor-pointer">
                 <img
                   className="w-10"
                   src={assets.video_call_icon}
                   alt="video_call_icon"
                 />
                 <span className="hidden md:block">Live Chat</span>
-              </p> */}
-              <VideoCall />
+              </p>
+              {/* <VideoCall /> */}
             </div>
 
             <div className="flex items-center gap-2 text-sm mt-1 text-gray-600">
